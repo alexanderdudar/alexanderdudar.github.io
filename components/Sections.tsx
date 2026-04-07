@@ -42,7 +42,7 @@ function FadeItem({ children, delay = 0, className = "" }: { children: React.Rea
 export function About() {
   const ref = useFadeIn();
   return (
-    <section ref={ref} id="about" className="py-40 px-8 fade-up">
+    <section ref={ref} id="about" className="py-20 md:py-32 px-8 fade-up">
       <div className="max-w-[780px] mx-auto">
         <p className="text-[clamp(1.5rem,3vw,2.25rem)] font-semibold leading-snug tracking-tight text-[#1d1d1f]" style={{ letterSpacing: "-0.02em" }}>
           Computer Engineering student at UBC. I work on technical and business projects at the intersection
@@ -96,7 +96,7 @@ export function Skills() {
   };
   const ref = useFadeIn();
   return (
-    <section ref={ref} id="skills" className="py-40 px-8 bg-[#fafafa] fade-up">
+    <section ref={ref} id="skills" className="py-20 md:py-32 px-8 bg-[#fafafa] fade-up">
       <div className="max-w-[780px] mx-auto">
         <h2 className="text-[2rem] font-semibold tracking-tight text-[#1d1d1f] mb-16">
           Skills
@@ -210,7 +210,7 @@ export function Experience() {
   }
 
   return (
-    <section ref={ref} id="experience" className="py-40 px-8 fade-up">
+    <section ref={ref} id="experience" className="py-20 md:py-32 px-8 fade-up">
       <div className="max-w-[780px] mx-auto">
         <h2 className="text-[2rem] font-semibold tracking-tight text-[#1d1d1f] mb-16">
           Experience
@@ -262,7 +262,7 @@ export function Education() {
 
   const ref = useFadeIn();
   return (
-    <section ref={ref} id="education" className="py-40 px-8 bg-[#fafafa] fade-up">
+    <section ref={ref} id="education" className="py-20 md:py-32 px-8 bg-[#fafafa] fade-up">
       <div className="max-w-[780px] mx-auto">
         <h2 className="text-[2rem] font-semibold tracking-tight text-[#1d1d1f] mb-16">
           Education
@@ -315,7 +315,7 @@ const projects = [
 export function Projects() {
   const ref = useFadeIn();
   return (
-    <section ref={ref} id="projects" className="py-40 px-8 fade-up">
+    <section ref={ref} id="projects" className="py-20 md:py-32 px-8 fade-up">
       <div className="max-w-[780px] mx-auto">
         <h2 className="text-[2rem] font-semibold tracking-tight text-[#1d1d1f] mb-16">
           Projects
@@ -351,7 +351,7 @@ export function Projects() {
 export function Contact() {
   const ref = useFadeIn();
   return (
-    <section ref={ref} id="contact" className="py-40 px-8 bg-[#fafafa] fade-up">
+    <section ref={ref} id="contact" className="py-20 md:py-32 px-8 bg-[#fafafa] fade-up">
       <div className="max-w-[780px] mx-auto">
         <h2 className="text-[2rem] font-semibold tracking-tight text-[#1d1d1f] mb-16">
           Contact
