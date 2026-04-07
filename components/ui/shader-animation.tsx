@@ -109,10 +109,13 @@ export function ShaderAnimation() {
     onWindowResize();
     window.addEventListener("resize", onWindowResize, false);
 
+    let lastTime = performance.now();
     const animate = () => {
       const animationId = requestAnimationFrame(animate);
-      (uniforms.time.value as number);
-      uniforms.time.value = (uniforms.time.value as number) + 0.005;
+      const now = performance.now();
+      const delta = (now - lastTime) / 1000; // seconds
+      lastTime = now;
+      uniforms.time.value = (uniforms.time.value as number) + delta * 0.5;
       renderer.render(scene, camera);
       if (sceneRef.current) {
         sceneRef.current.animationId = animationId;
