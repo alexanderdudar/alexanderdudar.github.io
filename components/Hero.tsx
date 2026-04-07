@@ -21,7 +21,7 @@ export function Hero() {
   }, []);
 
   return (
-    <section className="relative w-full h-screen flex items-center justify-center overflow-hidden bg-black">
+    <section className="relative w-full flex items-center justify-center overflow-hidden bg-black" style={{ height: "100dvh" }}>
       {/* Shader fills entire hero */}
       <div
         className="absolute inset-0 transition-opacity duration-1000 ease-in"
