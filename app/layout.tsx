@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://alexanderdudar.github.io"),
   title: "Alexander Dudar",
   description:
     "Computer Engineering student at UBC. Software engineer, technical project manager, and derivatives trader.",
